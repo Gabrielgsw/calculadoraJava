@@ -22,8 +22,7 @@ public class calculadoraJava {
                 System.out.println("Opção invalida. Digite novamente");
              }
             }while(opcao < 1 || opcao > 4);
-        
-        double resultado = 0;
+                     double resultado = 0;
         if(opcao == 1)
         {
             resultado = soma(numero1, numero2);
@@ -61,13 +60,24 @@ public class calculadoraJava {
         return multiplicacao;
     }
     
-    public static double divisao(double numero1, double numero2)
-    {
+    
+    public static double divisao(double numero1, double numero2){
+ 
+        if(numero2==0){
+            System.out.println("Nao foi possível realizar a divisao!");
+            
+        }
+        
         double divisao = numero1 / numero2;
         return divisao;
-    }
+        
+        }
+
+    
+    } 
+    
 
 
 
 
-}
+    
